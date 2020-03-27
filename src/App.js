@@ -33,7 +33,7 @@ class App extends React.Component {
     super(props);
     // TODO this is janktown routing
     const path = window.location.pathname.slice(1).toLowerCase();
-    const currentArea = Areas[path] ? path : "sf";
+    const currentArea = Areas[path] ? path : "toronto";
 
     this.state = {
       faqVisible: false,
@@ -94,7 +94,7 @@ class App extends React.Component {
                       SaveOurFaves
                     </Title>
                     <div style={{ float: "right" }}>
-                      <a href="#">
+                      <a href="/#">
                         <Title
                           onClick={() => {
                             this.showFAQModal();

@@ -85,6 +85,7 @@ export class PlaceResultMain extends React.Component {
                 <p>
                   Do they have a link to sell gift cards?{" "}
                   <a
+                    href="/#"
                     className="app-link"
                     onClick={() => this.setState({ showAddModal: true })}
                   >

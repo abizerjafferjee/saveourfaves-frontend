@@ -16,10 +16,7 @@ function AreaDropdown(props) {
         props.updateArea(newArea);
       }}
     >
-      <option value="sf">San Francisco</option>
-      <option value="eastbay">East Bay</option>
-      <option value="marin">Marin</option>
-      <option value="southbay">South Bay</option>
+      <option value="toronto">Toronto</option>
     </select>
   );
 }
@@ -41,6 +38,7 @@ export class NeighborhoodCards extends React.Component {
     this.ref = React.createRef();
   }
   neighborhoodsForArea = area => {
+    console.log(area);
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -181,6 +179,7 @@ export class NeighborhoodCards extends React.Component {
           >
             {this.state.offset !== 0 && (
               <a
+                href="/#"
                 className={
                   "neighborhood-card-arrow neighborhood-card-arrow-left " +
                   (this.state.offset >= this.state.neighborhoods.length - 1
@@ -199,6 +198,7 @@ export class NeighborhoodCards extends React.Component {
             {this.getCardsForCurrentPage()}
             {this.state.offset < this.state.neighborhoods.length - 1 && (
               <a
+                href="/#"
                 className={
                   "neighborhood-card-arrow neighborhood-card-arrow-right " +
                   (this.state.offset >= this.state.neighborhoods.length - 1
