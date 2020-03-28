@@ -130,6 +130,7 @@ export function AddNewPlaceModal(props) {
           />
           <div style={{ marginTop: 8 }}>
             <a
+              href="/#"
               style={{ display: showDonationInput ? "none" : "inline" }}
               onClick={e => {
                 setShowDonationInput(true);

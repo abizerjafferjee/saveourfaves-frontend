@@ -38,7 +38,6 @@ export class NeighborhoodCards extends React.Component {
     this.ref = React.createRef();
   }
   neighborhoodsForArea = area => {
-    console.log(area);
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -167,6 +166,7 @@ export class NeighborhoodCards extends React.Component {
             />
           </Title>
         </div>
+
         {this.state.neighborhoods && (
           <section
             className="neighborhood-card-container"
@@ -195,7 +195,9 @@ export class NeighborhoodCards extends React.Component {
                 {"‹"}
               </a>
             )}
+
             {this.getCardsForCurrentPage()}
+
             {this.state.offset < this.state.neighborhoods.length - 1 && (
               <a
                 href="/#"
@@ -219,6 +221,7 @@ export class NeighborhoodCards extends React.Component {
             )}
           </section>
         )}
+
         {(this.state.loading ||
           (this.state.suggestedPlaces &&
             this.state.suggestedPlaces.length > 0)) && (

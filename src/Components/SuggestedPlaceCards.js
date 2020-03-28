@@ -21,6 +21,7 @@ export class SuggestedPlaceCards extends React.Component {
           >
             <ExtraActionButtons place={suggestion} />
           </Row>
+
           <Row style={{ minHeight: "88px" }}>
             <Title
               className="suggestion-title"
@@ -34,6 +35,7 @@ export class SuggestedPlaceCards extends React.Component {
             >
               {suggestion.name}
             </Title>
+
             <div style={{ margin: "0px auto" }}>
               <CallToActionButton place={suggestion} size={"default"} />
             </div>
@@ -54,6 +56,7 @@ export class SuggestedPlaceCards extends React.Component {
         <section className="suggestions-container">
           <Row style={{ justifyContent: "center" }}>{suggestedPlaceCards}</Row>
         </section>
+
         {this.props.moreAvailable && (
           <div style={{ textAlign: "center" }}>
             <Button

@@ -19,20 +19,20 @@ export class PlaceResultMain extends React.Component {
     var place = this.props.place;
     if (!place) {
       return null;
-      place = {
-        name: "The Snug",
-        address: "2301 Fillmore Street",
-        giftCardURL:
-          "https://www.toasttab.com/the-snug-san-francisco/giftcards",
-        donationURL:
-          "https://www.toasttab.com/the-snug-san-francisco/giftcards",
-        takeoutURL: null,
-        placeURL: null,
-        emailContact: null,
-        imageURL:
-          "https://lh3.googleusercontent.com/p/AF1QipM09mIPRVymgGeEM5ZSYH21AhYHk-uZQPKrC8c=s1600-w800",
-        placeID: "ChIJ-_7qDsaAhYARKG4Gj6yw2ho"
-      };
+      // place = {
+      //   name: "The Snug",
+      //   address: "2301 Fillmore Street",
+      //   giftCardURL:
+      //     "https://www.toasttab.com/the-snug-san-francisco/giftcards",
+      //   donationURL:
+      //     "https://www.toasttab.com/the-snug-san-francisco/giftcards",
+      //   takeoutURL: null,
+      //   placeURL: null,
+      //   emailContact: null,
+      //   imageURL:
+      //     "https://lh3.googleusercontent.com/p/AF1QipM09mIPRVymgGeEM5ZSYH21AhYHk-uZQPKrC8c=s1600-w800",
+      //   placeID: "ChIJ-_7qDsaAhYARKG4Gj6yw2ho"
+      // };
     }
     return (
       <Row className="place-result">
@@ -52,7 +52,6 @@ export class PlaceResultMain extends React.Component {
         <Col
           xs={24}
           sm={24}
-          jjkk
           md={16}
           lg={16}
           xl={16}
