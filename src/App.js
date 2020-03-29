@@ -107,7 +107,7 @@ class App extends React.Component {
                         </Title>
                       </a>
                       <Popover content={<ShareOptions />}>
-                        <a>
+                        <a href="/#">
                           <Title
                             className="header-link header-share-link"
                             level={4}
@@ -162,6 +162,7 @@ class App extends React.Component {
                         }}
                       </AreaContext.Consumer>
                     </div>
+
                     <div className="neighborhood-card-container-outer">
                       <AreaContext.Consumer>
                         {value => {
@@ -176,6 +177,7 @@ class App extends React.Component {
                     </div>
                   </div>
                 </Col>
+
                 <Row className="footer-content">
                   <Col
                     offset={2}
